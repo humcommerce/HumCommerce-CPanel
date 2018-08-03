@@ -29,7 +29,7 @@
 		<p class="ng-scope">
 			Get started by signing up on HumCommerce.
 		</p>
-		<button class="btn btn-primary ng-scope" onclick='window.open("https://www.humcommerce.com/<?php echo $AffilateID?>")'>SignUp to HumCommerce for free</button>
+		<button class="btn btn-primary ng-scope" onclick='window.open("https://www.humcommerce.com/?affilateid=<?php echo $AffilateID?>")'>SignUp to HumCommerce for free</button>
     	</div>
 </div>
 
