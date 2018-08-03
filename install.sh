@@ -49,8 +49,8 @@ echo "Starting HumCommerce Installation..."
 # if not installing from local path we have to download the file
 
 INSTALL_DIR="/usr/local/cpanel"
-install -d $INSTALL_DIR/base/frontend/paper_latern/heatmaps_session_recordings
-cd $INSTALL_DIR/base/frontend/paper_latern/heatmaps_session_recordings
+install -d $INSTALL_DIR/base/frontend/paper_lantern/heatmaps_session_recordings
+cd $INSTALL_DIR/base/frontend/paper_lantern/heatmaps_session_recordings
 
 if ["$LOCAL_FILE_PATH" == ""]; then
 	DOWNLOAD_URL="https://github.com/humcommerce/HumCommerce-CPanel/raw/master/humcommerce-cpanel.tar.gz"
@@ -59,8 +59,8 @@ else
 	echo $LOCAL_FILE_PATH
 fi
 
-echo [AFFILATE_KEY] > $INSTALL_DIR/base/frontend/paper_latern/heatmaps_session_recordings/AffilateID.ini
-echo AffilateID = $AFFILATE_KEY >> $INSTALL_DIR/base/frontend/paper_latern/heatmaps_session_recordings/AffilateID.ini
+echo [AFFILATE_KEY] > $INSTALL_DIR/base/frontend/paper_lantern/heatmaps_session_recordings/AffilateID.ini
+echo AffilateID = $AFFILATE_KEY >> $INSTALL_DIR/base/frontend/paper_lantern/heatmaps_session_recordings/AffilateID.ini
 /usr/local/cpanel/scripts/install_plugin /usr/local/cpanel/base/frontend/paper_lantern/heatmaps_session_recordings/heatmaps_session_recordings.tar.gz
 
 echo "Installation Complete!"
